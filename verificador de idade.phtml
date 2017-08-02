@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>estrutura elseif - curso php -excript</title>
+</head>
+
+
+<body>
+
+
+
+
+
+<?php
+    if(isset($_POST['idade'])){
+        $idade= $_POST['idade'];
+
+       if($idade < 18){
+           echo "<br>";
+           echo "A Idade e de uma crianca ou de um Adolescente";
+
+
+
+       }elseif($idade >= 18 and $idade < 60){
+           echo "A Idade e de um Adulto ";
+
+       }else{
+           echo "A Idade e de uma pessoa da Terceira Idade";
+
+       }
+    }
+
+
+
+
+?>
+
+<form method="POST">
+    <input type="texte" name="idade">
+    <input type="submit">
+
+
+</form>
+
+
+
+</body>
+
+
+
+
+</html>
